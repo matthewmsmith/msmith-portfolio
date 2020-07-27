@@ -9,8 +9,8 @@ box-sizing: border-box;
 
 /* Custom properties */ 
 :root {
-    --ff-primary: 'Ubuntu', sans-serif;
-    --ff-secondary: 'Rowdies', cursive;
+    --ff-primary: 'Montserrat', sans
+    --ff-secondary: 'Roboto', sans-serif;
     
 
     --fw-reg: 300;
@@ -135,11 +135,10 @@ list-style: none;
     height: 100%;
     transform: scale(0);
     transition: .5s;
- z-index: -1;
+    z-index: -1;
 }
 
 .nav__link:hover::after {
-    
     transform: scale(1);
 
 }
@@ -152,21 +151,19 @@ list-style: none;
     background-image: url(../img/profile.jpg);
     background-size: cover;
     height: 100vh;
-    max-width: 100%;
     background-position: center;
     box-shadow: var(--bs);
- 
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    
   
 }
-.section__title--intro,
- .section__subtitle--intro{
- padding-top: .8em;
+.section__title--intro{
+  padding-top: 5em;
 }
 
-.section__title {
-    font-weight: lighter;
-    margin-bottom: .2em;
-}
+
 
 @media(min-width: 600px) {
     .nav__list {
@@ -175,29 +172,26 @@ list-style: none;
          width: 100%;
         
     }
-    .section__title--intro,
-    .section__subtitle--intro{
-    padding-top: .8em;
+   
+    .section__title--intro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 4em;
+        }
+    .section__subtitle--intro {
+        
+        padding-left: 7em;
+        padding-top: 1em;
+    }
+  
    }
 
-}
-
-
-@media (min-width: 600px) {
-    .section__title--intro, .section__subtitle--intro {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
 @media(min-width: 800px) {
-    .section__title--intro,
-    .section__subtitle--intro {
-    margin: 0;
-    padding: 0;
+
+
+
 }
-
-
 
 
 /* ABOUT ME */
