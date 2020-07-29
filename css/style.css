@@ -1,4 +1,4 @@
-
+/* RESET */
 *,
 *::before,
 *::after {
@@ -9,9 +9,9 @@ box-sizing: border-box;
 
 /* Custom properties */ 
 :root {
-    --ff-primary: 'Open Sans', sans-serif;
+    --ff-primary: 'Playfair Display', serif;
     --ff-secondary: 'Source Serif Pro', serif;
-    --ff-logo: 'Playfair Display', serif;
+    --ff-logo: 'Pinyon Script', cursive;
 
     --fw-reg: 400;
     --fw-bold: 700;
@@ -34,15 +34,7 @@ box-sizing: border-box;
     0 32px 64px rgba(0,0,0,0.07);
 } 
 
-@media (min-width: 800px) {
-    :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
-    }
-}
-
+/* SELECTORS */
 html {
     scroll-behavior: smooth;
 }
@@ -50,7 +42,7 @@ body {
     background: var(--clr-light);
     color: var(--clr-text);
     margin: 0;
-    font-family: var(--ff-primary);
+    font-family: var(--ff-secondary);
     font-size: var(--ff-body);
     line-height: 1.6em;
  
@@ -68,34 +60,7 @@ header {
 strong {
     text-decoration: underline;
 }
-.logo{
-    font-size: 1em;
 
-    font-family: var(--ff-logo);
-    color: var(--clr-light);
-    
-    
-}
-.intro {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: left;
-   color: var(--clr-light);
-   margin: 0;
-   
-   
-}
-.intro__title {
-    font-size: 2em;
-    font-family: var(--ff-logo);
-}
-.intro__name {
-    font-size: 2.4em;
-    font-size: 1em;
-    font-family: var(--ff-logo);
-    letter-spacing: 1.8em;
-}
 img {
     display: block;
     max-width: 100%;
@@ -105,9 +70,17 @@ a {
 }
 
 /* TYPOGRAPHY */
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
 
 h1, h2, h3 {
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     font-weight: var(--fw-reg);
     line-height: 1.6;
     margin: 0;
@@ -118,23 +91,31 @@ h2 {font-size: var(--fs-h2);}
 h3 {font-size: var(--fs-h3);}
 
 
-/* HEADER */
+/* LOGO*/
+
+.logo{
+    font-size: 1.4em;
+    font-family: var(--ff-logo);
+    color: var(--clr-light);
+    padding-left: 1em;
+    padding-top: .3em;
+}
 
 
-
+/* NAVIGATION */
 .nav__list {
     
-font-family: var(--ff-logo);   
+font-family: var(--ff-primary);   
 position: absolute;
 top: 1%;
 bottom: 0%;
 left: 0%;
-margin: 0;
+margin-top: 2.4em;
 padding: 0;
 display: inline;
 list-style: none;
  text-transform: uppercase;
- 
+ letter-spacing: .2em;
  
 }
 
@@ -194,9 +175,29 @@ list-style: none;
 
 }
 
-
-/* Intro section  */
-
+/* Introduction */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    color: var(--clr-light);
+    margin: 0;
+    padding-top: 17em;
+    
+    
+ }
+.intro__title {
+    font-size: 2em;
+    font-family: var(--ff-primary);
+    letter-spacing: .075em;
+}
+.intro__name {
+    font-size: 2.4em;
+    font-size: 1em;
+    font-family: var(--ff-primary);
+    letter-spacing: 1.8em;
+}
 
 
 @media(min-width: 600px) {
