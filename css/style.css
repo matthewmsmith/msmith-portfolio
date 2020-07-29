@@ -9,25 +9,29 @@ box-sizing: border-box;
 
 /* Custom properties */ 
 :root {
-    --ff-primary:'Montserrat', sans-serif;
-    --ff-secondary: 'Roboto', sans-serif;
-    
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'Source Serif Pro', serif;
+    --ff-logo: 'Playfair Display', serif;
 
     --fw-reg: 400;
     --fw-bold: 700;
     
 
     --clr-light: #ebebeb;
-    --clr-dark: #1a1a1a;
+    --clr-dark: #292929;
     --clr-accent:#dad8d8;
-    --clr-text: rgb(43, 42, 42);
+    --clr-text: rgb(56, 55, 55);
 
     --fs-h1: 3rem;
     --fs-h2: 2.2rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
-    --bs: .2em 1em .3em rgba(0, 0, 0, .2), 
-           0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+    --bs:  0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
 } 
 
 @media (min-width: 800px) {
@@ -46,18 +50,52 @@ body {
     background: var(--clr-light);
     color: var(--clr-text);
     margin: 0;
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     font-size: var(--ff-body);
     line-height: 1.6em;
+ 
 }
 
 section {
-    padding: 9em 1.4em;
+    padding: 10em 4em;
 }
 
+header {
+    width: 100%;
+    height: 40em;
+    background-color: var(--clr-dark);
+}
+strong {
+    text-decoration: underline;
+}
+.logo{
+    font-size: 1em;
 
-
-
+    font-family: var(--ff-logo);
+    color: var(--clr-light);
+    
+    
+}
+.intro {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: left;
+   color: var(--clr-light);
+   margin: 0;
+   
+   
+}
+.intro__title {
+    font-size: 2em;
+    font-family: var(--ff-logo);
+}
+.intro__name {
+    font-size: 2.4em;
+    font-size: 1em;
+    font-family: var(--ff-logo);
+    letter-spacing: 1.8em;
+}
 img {
     display: block;
     max-width: 100%;
@@ -82,14 +120,13 @@ h3 {font-size: var(--fs-h3);}
 
 /* HEADER */
 
-header{
-    max-width: 100%;
 
-}
+
 .nav__list {
-font-family: var(--ff-primary);   
+    
+font-family: var(--ff-logo);   
 position: absolute;
-top: 2%;
+top: 1%;
 bottom: 0%;
 left: 0%;
 margin: 0;
@@ -98,23 +135,25 @@ display: inline;
 list-style: none;
  text-transform: uppercase;
  
+ 
 }
 
 .nav__link {
+    
     position: relative;
     display: block;
     padding: 10px 20px;
     margin: 10px 0;
     transition: .5s;
-    color: var(--clr-dark);
-    font-size: var(--fs-h3);
+    color: var(--clr-light);
+    font-size: 1em;
     font-weight: var(--fw-bold);
     text-decoration: none;
       
 }
 .nav__link:hover {
     z-index: 1;
-    color: rgb(0, 0, 0)
+    color: var(--clr-accent);
 }
 .nav__link:before {
     content: '';
@@ -139,7 +178,7 @@ list-style: none;
 }
 .nav__link::after {
     content: '';
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     position: absolute;
     top: 1px;
     left: 0;
@@ -157,37 +196,24 @@ list-style: none;
 
 
 /* Intro section  */
-.intro {
-    color: var(--clr-dark);
-    background-image: url(../img/profile.jpg);
-    background-size: cover;
-    height: 100vh;
-    background-position: center;
-    box-shadow: var(--bs);
-    padding: 0;
-    margin: auto;
-    text-align: center;
-    
-  
-}
-.section__title--intro {
- 
-  font-size: var(--fs-h3);
-  display: flex;
-  justify-content: center;
-  padding-top:10em;
-}
 
 
 
 @media(min-width: 600px) {
+    .logo{
+     
+    }
     .nav__list {
         display: flex;
         justify-content: center;
         width: 100%;
-     
+        padding-top: 2em;
     
     }
+    .nav__link {
+      padding: 0 2em;
+    }
+    
    
     .section__title--intro {
          font-size: var(--fs-h3);
@@ -240,17 +266,13 @@ list-style: none;
         "text img";
     }
     
-    .section__title--about {
     
-        grid-area: title;
-    }
     .section__subtitle--about {
         grid-column: 1/-1;
         align-self: start;
         grid-row: 2;
         position: relative;
         left: -.5em;
-        padding-right: calc(200px + 4em );
         padding-left: 2em;
         z-index: -1;
         width: calc(100% + 1em);
@@ -258,7 +280,7 @@ list-style: none;
     }
     
     .about-me__img {
-        grid-area: img;
+        grid-area: img
        
     }
 
@@ -269,7 +291,8 @@ list-style: none;
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
-    
+    padding-top: 10em;
+   
 }
 
 .portfolio {
@@ -354,4 +377,7 @@ list-style: none;
     padding: .5em 2em;
     border-radius: .3em;
     
+}
+.my__projects {
+ padding-left: .2em;   
 }
