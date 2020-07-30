@@ -1,0 +1,67 @@
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: $white;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+
+  transition-property: background-color;
+  transition-duration: .2s;
+  transition-timing-function: ease-in;
+  .btn:hover {
+    transform: scale(.99);
+  }
+}
+.default {
+  background-color: $default-bg;
+  &:hover {
+    background-color: lighten($default-bg, 15%);
+  }
+}
+
+.error {
+  background-color: $error-bg;
+  &:hover {
+    background-color: lighten($error-bg, 15%);
+  }
+}
+
+.info {
+  background-color: $purple-bg;
+  &:hover {
+    background-color: lighten($purple-bg, 15%);
+  }
+}
+
+.success {
+  background-color: $success-bg;
+  
+  &:hover {
+    background-color: lighten($success-bg, 15%);
+  }
+}
+
+.warning {
+  background-color: $warning-bg;
+
+  &:hover {
+    background-color: lighten($warning-bg, 15%);
+  }
+}
+
+
+
+@include tablet-size {
+  .btn {
+    padding: 10px 30px;
+  }
+  
+  .btn + .btn {
+    margin-left: 10px;
+  }
+  
+  
+
+}

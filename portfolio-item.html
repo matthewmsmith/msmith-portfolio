@@ -2,23 +2,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <link
-    href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Noto+Serif+JP&family=Playfair+Display&display=swap"
-    rel="stylesheet"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Noto+Serif+JP&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
     <title>Matthew's | Portfolio Website</title>
   </head>
   <body>
     <header>
-       <h3 class="logo">MS</h3>
+      <h3 class="logo">MS</h3>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="index.html#index.html" class="nav__link">Home</a></li>
+            <a href="index.html#index.html" class="nav__link">Home</a>
+          </li>
           <li class="nav__item">
             <a href="index.html#about" class="nav__link">About Me</a>
           </li>
@@ -26,81 +33,96 @@
             <a href="index.html#work" class="nav__link">My Work</a>
           </li>
         </ul>
-
       </nav>
       <section class="intro">
-        <p class=" intro__title">Frontend <strong>Dev</strong>eloper</p>
-        <p class=" intro__name">-MATTHEW SMITH</p>
-       </section>
+        <p class="intro__title">Frontend <strong>Dev</strong>eloper</p>
+        <div class="intro__name">MATTHEW SMITH</div>
+      </section>
     </header>
-    <h2 class="section__title section__title--about my__projects">My projects</h2>
-    <section class="about-me about-portfolio-item item " >
-       
+    <h2 class="section__title section__title--about my__projects">
+      My projects
+    </h2>
 
-        <p class="section__subtitle section__subtitle--about">
-          Interactive Gallery
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi
-          rem aliquid expedita eum ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eum nihil perspiciatis ex pariatur assumenda saepe corporis repellendus iste neque!
-        </p>
-        <img src="img/gallery.jpg" alt="Gallery" class="about-me__img">
-  
-      </section>
+    <section class="about-me about-portfolio-item">
+      <p class="section__subtitle section__subtitle--about">
+        Interactive Gallery
+      </p>
+      <p>
+        When the user clicks on a thumbnail, the photo will display in a
+        lightbox. There is previous and next arrows to cycle through photos.
+      </p>
+      <a
+        href="msmith-interactive-photo-gallery-master/index.html"
+        class="about-me__img"
+        ><img
+          src="img/gallery.jpg"
+          alt="Gallery showcase image"
+          class="image__link"
+      /></a>
+    </section>
 
-      <section class="about-me about-portfolio-item" >
-        <p class="section__subtitle section__subtitle--about">
-          Word Guessing Game
-        </p>
-      
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi
-          rem aliquid expedita eum ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eum nihil perspiciatis ex pariatur assumenda saepe corporis repellendus iste neque!
-        </p>
-        <img src="img/word.jpg" alt="Gallery image"  class="about-me__img">
-        
-      </section>
+    <section class="about-me about-portfolio-item">
+      <p class="section__subtitle section__subtitle--about">
+        Word Guessing Game
+      </p>
+      <p>
+        I created a version of “Wheel of Success”, a word guessing game where
+        players will click letters from an onscreen keyboard to try to guess a
+        random phrase.
+      </p>
+      <a href="msmith-game-show-app-master/index.html" class="about-me__img"
+        ><img src="img/word.jpg" alt="Game showcase image" class="image__link"
+      /></a>
+    </section>
 
-      <section class="about-me about-portfolio-item" >
-        <p class="section__subtitle section__subtitle--about">
-          Style Guide
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi
-          rem aliquid expedita eum ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eum nihil perspiciatis ex pariatur assumenda saepe corporis repellendus iste neque!
-        </p>
-  
-      
-        <a href="msmith-web-app-dashboard-master/index.html " target="_blank">
-          <img src="img/style.jpg" class="about-me__img" alt="">
-        </a>
-      
-      </section>
+    <section class="about-me about-portfolio-item">
+      <p class="section__subtitle section__subtitle--about">
+        Style Guide
+      </p>
+      <p>
+        Create a style guide that can act as your own personal and custom
+        Bootstrap that you can drop into any of your projects to speed up
+        styling, layout and development in general.
+      </p>
+      <a href="msmith-web-style-guide-master/" class="about-me__img"
+        ><img
+          src="img/style.jpg"
+          class="image__link"
+          alt="Web styling showcase image"
+      /></a>
+    </section>
 
-      <section class="about-me about-portfolio-item" >
-        <p class="section__subtitle section__subtitle--about">
-          Registration Form
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi
-          rem aliquid expedita eum ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eum nihil perspiciatis ex pariatur assumenda saepe corporis repellendus iste neque!
-        </p>
-  
-        <img src="img/register.jpg" alt="Gallery image"  class="about-me__img">
-      </section>
+    <section class="about-me about-portfolio-item">
+      <p class="section__subtitle section__subtitle--about">
+        Registration Form
+      </p>
+      <p>
+        Designed a web page that looks and function well on multiple screen
+        sizes using HTML, CSS, and responsive design methodology. Started with
+        mobile-first format that adjusts to fit mobile phones, tablets, and
+        desktop display.
+      </p>
 
-      <section class="about-me about-portfolio-item" >
-        <p class="section__subtitle section__subtitle--about">
-          Mobile Responsive
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi
-          rem aliquid expedita eum ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eum nihil perspiciatis ex pariatur assumenda saepe corporis repellendus iste neque!
-        </p>
-  
-        <img src="img/mobile.jpg" alt="mobile"  class="about-me__img">
-      </section>
-   
+      <a href="msmith-registration-form-master/index.html" class="about-me__img"
+        ><img src="img/register.jpg" alt="Gallery image" class="image__link"
+      /></a>
+    </section>
+
+    <section class="about-me about-portfolio-item">
+      <p class="section__subtitle section__subtitle--about">
+        Mobile Responsive
+      </p>
+      <p>
+        Designed website that looks and functions well on multiple screens.
+        Using HTML, CSS, and responsive design. My objective was to showcase my
+        understanding of a mobile-first web page with a layout that adjusts to
+        fit other devices, such as tablets, and desktop displays.
+      </p>
+
+      <a href="msmith-responsive-layout-master/index.html" class="about-me__img"
+        ><img src="img/mobile.jpg" alt="mobile" class="image__link"
+      /></a>
+    </section>
 
     <!--Footer-->
     <footer class="footer">
