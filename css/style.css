@@ -10,8 +10,8 @@ box-sizing: border-box;
 /* Custom properties */ 
 :root {
     --ff-primary: 'Playfair Display', serif;
-    --ff-secondary: 'Source Serif Pro', serif;
-    --ff-logo: 'Pinyon Script', cursive;
+    --ff-secondary: 'Noto Serif JP', serif;
+    --ff-logo: 'Herr Von Muellerhoff', cursive;
 
     --fw-reg: 400;
     --fw-bold: 700;
@@ -45,6 +45,7 @@ body {
     font-family: var(--ff-secondary);
     font-size: var(--ff-body);
     line-height: 1.6em;
+    
  
 }
 
@@ -94,6 +95,7 @@ h3 {font-size: var(--fs-h3);}
 /* LOGO*/
 
 .logo{
+    font-style: italic;
     font-size: 1.4em;
     font-family: var(--ff-logo);
     color: var(--clr-light);
@@ -116,7 +118,6 @@ display: inline;
 list-style: none;
  text-transform: uppercase;
  letter-spacing: .2em;
- 
 }
 
 .nav__link {
@@ -254,7 +255,9 @@ list-style: none;
 .about-me__img  {
     box-shadow: var(--bs);
 }
-
+.description {
+    padding: 0 1.5em;
+}
 
 
 @media(min-width: 600px) {
