@@ -195,7 +195,9 @@ i {
   letter-spacing: .3em;
   font-style: italic;
 }
-
+.intro__paragraph--portfolioPage {
+  line-height: 1.6em;
+}
 
 @media (min-width: 768px) {
   
