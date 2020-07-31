@@ -202,10 +202,10 @@ i {
 @media (min-width: 768px) {
   
   section {
-    padding: 17em 4em;
+    padding: 15em 4em;
   }
   .me{
-    padding: 10em;
+    padding: 10em 2em;
   }
   .logo {
     font-size: 1.4em;
@@ -236,7 +236,7 @@ i {
 
 @media (min-width: 1224px) {
  .me {
-   padding: 13em;
+   padding: 15em;
  }
  .about-portfolio-item {
     padding: 5em;
