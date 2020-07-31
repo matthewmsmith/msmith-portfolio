@@ -47,7 +47,7 @@ section {
 
 header {
   width: 100%;
-  height: 50em;
+  height: 55em;
   background-color: var(--clr-dark);
 }
 strong {
@@ -111,7 +111,7 @@ i {
 .nav__list {
   font-family: var(--ff-primary);
   position: absolute;
-  top: 1%;
+  top: 4%;
   bottom: 0%;
   left: 0%;
   padding: 0;
@@ -180,7 +180,7 @@ i {
   align-items: center;
   color: var(--clr-light);
   margin: 0;
-  padding-top: 12.5em;
+  padding-top: 15.5em;
 }
 .intro__paragraph {
   font-size: 1.3em;
@@ -198,8 +198,12 @@ i {
 
 
 @media (min-width: 768px) {
+  
   section {
-    padding: 15em 4em;
+    padding: 25em 4em;
+  }
+  .me{
+    padding: 10em;
   }
   .logo {
     font-size: 1.4em;
@@ -229,9 +233,9 @@ i {
 }
 
 @media (min-width: 1224px) {
-  section {
-    padding: 23em 5em;
-  }
+ .me {
+   padding: 13em;
+ }
  .about-portfolio-item {
     padding: 5em;
   }
