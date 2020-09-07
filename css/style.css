@@ -91,7 +91,8 @@ h3 {
   font-size: var(--fs-h3);
 }
 p {
-  padding: 0 2em;
+  padding: 0 5em;
+  line-height: 1.6em;
 }
 i {
   text-decoration: underline;
